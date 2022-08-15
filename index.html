@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <title>movieGate</title>
 </head>
@@ -40,45 +41,45 @@
 
     <main class="main-index">
 
-            <section class="news1">
-                <article>
-                    <h3 class="news-title">Marvel Reveals Phase 5 and 6 in SDCC</h3>
-                    <img class="news-img" src="./img/phase-5.jpg" alt="phase5">
-                    <p class="news-par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex eius saepe et dolores aut, minus eligendi consequuntur iusto, consequatur, recusandae sint nesciunt sequi! Dolor iste excepturi quibusdam corrupti! Aliquam, facere!
-                    </p>
-                </article>
+            <section  class="news1" data-aos="fade-right">
+                    <article>
+                        <h3 class="news-title">Marvel Reveals Phase 5 and 6 in SDCC</h3>
+                        <img class="news-img" src="./img/phase-5.jpg" alt="phase5">
+                        <p class="news-par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex eius saepe et dolores aut, minus eligendi consequuntur iusto, consequatur, recusandae sint nesciunt sequi! Dolor iste excepturi quibusdam corrupti! Aliquam, facere!
+                        </p>
+                    </article>
 
             </section>
 
-            <section class="news2">
+            <section class="news2" data-aos="fade-left">
                 <article>
                     <h3 class="news-title">Warner Bros Cancelled BATGIRL</h3>
                     <img class="news-img" src="./img/batgirl.jpeg" alt="Batgirl">
                     <p class="news-par" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente, corrupti fuga aspernatur explicabo exercitationem modi dolor porro voluptate sit eaque obcaecati pariatur incidunt tenetur. Impedit illo sit suscipit modi?</p>
                 </article>
             </section>
-            <section class="news3">
+            <section class="news3" data-aos="fade-right">
                 <article>
                     <h3 class="news-title">JOKER 2 Gets Release Date</h3>
                     <img class="news-img" src="./img/joker.jpg" alt="Joker">
                     <p class="news-par" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente, corrupti fuga aspernatur explicabo exercitationem modi dolor porro voluptate sit eaque obcaecati pariatur incidunt tenetur. Impedit illo sit suscipit modi?</p>
                 </article>
             </section>
-            <section class="news4">
+            <section class="news4" data-aos="fade-left">
                 <article>
                     <h3 class="news-title">John Wick's Director Wants a Break From Franchise</h3>
                     <img class="news-img" src="./img/johnwick.jpeg" alt="JohnWick">
                     <p class="news-par" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente, corrupti fuga aspernatur explicabo exercitationem modi dolor porro voluptate sit eaque obcaecati pariatur incidunt tenetur. Impedit illo sit suscipit modi?</p>
                 </article>
             </section>
-            <section class="news5">
+            <section class="news5" data-aos="fade-right">
                 <article>
                     <h3 class="news-title">Jurassic World Dominion' Extended Edition Adds 14-Minutes of Epic Footage</h3>
                     <img class="news-img" src="./img/jw.jpg" alt="JurassicWorld">
                     <p class="news-par" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente, corrupti fuga aspernatur explicabo exercitationem modi dolor porro voluptate sit eaque obcaecati pariatur incidunt tenetur. Impedit illo sit suscipit modi?</p>
                 </article>
             </section>
-            <section class="news6">
+            <section class="news6" data-aos="fade-left">
                 <article>
                     <h3 class="news-title">Pac-Man': Live-Action Adaptation of Classic Arcade Game in the Works</h3>
                     <img class="news-img" src="./img/pacman.jpg" alt="PacMan">
@@ -195,6 +196,9 @@
         </footer>
 
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
