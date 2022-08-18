@@ -1,120 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/bootstrap.css">
     <title>movieGate</title>
 </head>
+
 <body>
-    <header class="header">
-        <h1 class="header-title"><a href="../index.html">movieGate</a></h1>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="../index.html#last-week">LAST WEEK</a></li>
-                <li><a href="../index.html#next_sec">NEXT RELEASES</a></li>
-                <li><a href="./premier.html">PREMIERS</a></li>
-                <li><a href="./community.html">COMMUNITY</a></li>
-                <li><a href="./trailers.html">NEW TRAILERS</a></li>
-                <li><a href="./top.html">TOP FILMS</a></li>
-                <li><a href="./contact.html">CONTACT US</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-auto display" href="../index.html">movieGate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel">movieGate</h1>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./premier.html">PREMIERS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#next_rel">NEXT RELEASES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./community.html">COMMUNITY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./reviews.html">REVIEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-<body>
-    <main class="main-trailer">
-        <h2>LATEST TRAILERS</h2>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/1MiZUNxG9uA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/0g-fjsluqN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/GG30xtrBidQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/eE272-QRG3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/tcOxhTpu84w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/81THcbws7es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/sI-pEyVbUdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/f4ibxtijJws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/uq3IVfL69oI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid"  src="https://www.youtube.com/embed/lP2PhgQsLsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid"  src="https://www.youtube.com/embed/X1NNr_czKe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid"  src="https://www.youtube.com/embed/I-FA5Is6mP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/weJk2_a754w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/Mb8lVRdumsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/7k65LnPmRmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article data-aos="fade-up"
-        data-aos-duration="3000">
-            <iframe class="trailer-vid" src="https://www.youtube.com/embed/cXRFAuwILdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
 
-    </main>
+    <body>
+        <main class="main-index">
+            <h1 class="trailers-title">LATEST TRAILERS</h1>
+            <div class="container container-padd">
+                <div class="row row-type-4">
+                    <section class="col-lg-12">
+                        <article>
+                            <h3>The Banshees Of Inisherin</h3>
+                            <iframe class="trailer-vid-1" src="https://www.youtube.com/embed/1MiZUNxG9uA" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </article>
+                    </section>
+                </div>
+            </div>
+            <div class="container container-padd">
+                <div class="row row-type-4">
+                    <div class="col-lg-6">            
+                        <article>
+                            <h3>The Greatest Beer Run Ever Trailer #1</h3>
+                            <iframe class="trailer-vid-2" src="https://www.youtube.com/embed/3uO2fLqUsbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">            
+                        <article>
+                            <h3>The Greatest Beer Run Ever Trailer #1</h3>
+                            <iframe class="trailer-vid-2" src="https://www.youtube.com/embed/ble4nFWEA1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="container container-padd">
+                <div class="row row-type-4">
+                    <section class="col-lg-12">
+                        <article>
+                            <h3>God's Creatures Trailer #1</h3>
+                            <iframe class="trailer-vid-1" src="https://www.youtube.com/embed/-0APzyIhTUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </article>
+                    </section>
+                </div>
+            </div>
+            <div class="container container-padd">
+                <div class="row row-type-4">
+                    <div class="col-lg-6">            
+                        <article>
+                            <h3>End of the Road Trailer #1</h3>
+                            <iframe class="trailer-vid-2" src="https://www.youtube.com/embed/aM-hg2lr8a4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">            
+                        <article>
+                            <h3>End of the Road Trailer #1</h3>
+                            <iframe class="trailer-vid-2" src="https://www.youtube.com/embed/Zm8mzzvCPpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="container container-padd">
+                <div class="row row-type-4">
+                    <section class="col-lg-12">
+                        <article>
+                            <h3>The Menu Trailer #1</h3>
+                            <iframe class="trailer-vid-1" src="https://www.youtube.com/embed/wb4zZ-cbRuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </article>
+                    </section>
+                </div>
+            </div>
 
-    <footer>
-        <div class="foot-icon">
-            <ul>
-                <li class="bi-instagram"></li>
-                <li class="bi-facebook"></li>
-                <li class="bi-twitter"></li>
-                <li class="bi-youtube"></li>
-            </ul>
-        </div>
-        <div class="foot-tag">
-            <h3>moviesGates</h3>
-            <p>"Lorem ipsum dolor sit amet."</p>
-        </div>
-    </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer-location">
+            <div class="container-fluid">
+                <div class="row row-type-2 justify-content-center aling-items-center">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 footer-icon">
+                        <ul>
+                            <li class="bi-twitter"></li>
+                            <li class="bi-instagram"></li>
+                            <li class="bi-facebook"></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 footer-text">
+                        <h3>movieGate</h3>
+                        <p>"Lorem ipsum dolor sit amet."</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
-</body>
+    </body>
+
 </html>

@@ -1,204 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/bootstrap.css">
     <title>movieGate</title>
 </head>
+
 <body>
-    <header class="header">
-        <h1 class="header-title"><a href="../index.html">movieGate</a></h1>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="#last-week">LAST WEEK</a></li>
-                <li><a href="#next_sec">NEXT RELEASES</a></li>
-                <li><a href="./pages/premier.html">PREMIERS</a></li>
-                <li><a href="./pages/community.html">COMMUNITY</a></li>
-                <li><a href="./pages/trailers.html">NEW TRAILERS</a></li>
-                <li><a href="./pages/top.html">TOP FILMS</a></li>
-                <li><a href="./pages/contact.html">CONTACT US</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-auto display" href="./index.html">movieGate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel">movieGate</h1>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./pages/premier.html">PREMIERS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/trailers.html">TRAILERS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#next_rel">NEXT RELEASES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/community.html">COMMUNITY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/reviews.html">REVIEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
 
-    <section class="hero">   
+    <section class="hero">
         <div>
             <article class="hero-text">
-                <h2>SDCC MAJOR MOVIES NEWS</h2>
+                <p>SDCC MAJOR MOVIES NEWS</p>
             </article>
         </div>
-    </section> 
+    </section>
 
 
 
     <main class="main-index">
 
-            <section  class="news1" data-aos="fade-right">
-                    <article>
-                        <h3 class="news-title">Marvel Reveals Phase 5 and 6 in SDCC</h3>
-                        <img class="news-img" src="./img/phase-5.jpg" alt="phase5">
-                        <p class="news-par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex eius saepe et dolores aut, minus eligendi consequuntur iusto, consequatur, recusandae sint nesciunt sequi! Dolor iste excepturi quibusdam corrupti! Aliquam, facere!
-                        </p>
-                    </article>
-
-            </section>
-
-            <section class="news2" data-aos="fade-left">
-                <article>
-                    <h3 class="news-title">Warner Bros Cancelled BATGIRL</h3>
+        <div class="container-lg text-center">
+            <section class=" row row-type-1 justify-content-center">
+                <article class="col-12 col-sm-12 col-md-6" data-aos="fade">
+                    <p class="news-title">Marvel Reveals Phase 5 and 6 in SDCC</p>
+                    <img class="news-img" src="./img/phase-5.jpg" alt="phase5">
+                    <p class="news-par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+                        sapiente,corrupti
+                        fuga aspernatur explicabo exercitationem modi</p>
+                </article>
+                <article class="col-12 col-sm-12 col-md-6" data-aos="fade">
+                    <p class="news-title">Warner Bros Cancelled BATGIRL</p>
                     <img class="news-img" src="./img/batgirl.jpeg" alt="Batgirl">
-                    <p class="news-par" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente, corrupti fuga aspernatur explicabo exercitationem modi dolor porro voluptate sit eaque obcaecati pariatur incidunt tenetur. Impedit illo sit suscipit modi?</p>
+                    <p class="news-par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente,
+                        corrupti
+                        fuga aspernatur explicabo exercitationem modi</p>
                 </article>
             </section>
-            <section class="news3" data-aos="fade-right">
-                <article>
-                    <h3 class="news-title">JOKER 2 Gets Release Date</h3>
+        </div>
+        <div class="container-lg text-center">
+            <section class=" row row-type-1 justify-content-center">
+                <article class="col-12 col-sm-12 col-md-6" data-aos="fade">
+                    <h2 class="news-title">JOKER 2 Gets Release Date</h2>
                     <img class="news-img" src="./img/joker.jpg" alt="Joker">
-                    <p class="news-par" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente, corrupti fuga aspernatur explicabo exercitationem modi dolor porro voluptate sit eaque obcaecati pariatur incidunt tenetur. Impedit illo sit suscipit modi?</p>
+                    <p class="news-par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente,
+                        corrupti
+                        fuga aspernatur explicabo exercitationem modi</p>
                 </article>
-            </section>
-            <section class="news4" data-aos="fade-left">
-                <article>
-                    <h3 class="news-title">John Wick's Director Wants a Break From Franchise</h3>
+                <article class="col-12 col-sm-12 col-md-6" data-aos="fade">
+                    <h2 class="news-title">John Wick's Director Wants a Break From Franchise</h2>
                     <img class="news-img" src="./img/johnwick.jpeg" alt="JohnWick">
-                    <p class="news-par" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente, corrupti fuga aspernatur explicabo exercitationem modi dolor porro voluptate sit eaque obcaecati pariatur incidunt tenetur. Impedit illo sit suscipit modi?</p>
+                    <p class="news-par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente,
+                        corrupti
+                        fuga aspernatur explicabo exercitationem modi</p>
                 </article>
             </section>
-            <section class="news5" data-aos="fade-right">
-                <article>
-                    <h3 class="news-title">Jurassic World Dominion' Extended Edition Adds 14-Minutes of Epic Footage</h3>
+        </div>
+        <div class="container-lg text-center">
+            <section class=" row row-type-1 justify-content-center">
+                <article class="col-12 col-sm-12 col-md-6" data-aos="fade">
+                    <h2 class="news-title">Jurassic World Dominion' Extended Edition Adds 14-Minutes of Epic Footage
+                    </h2>
                     <img class="news-img" src="./img/jw.jpg" alt="JurassicWorld">
-                    <p class="news-par" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente, corrupti fuga aspernatur explicabo exercitationem modi dolor porro voluptate sit eaque obcaecati pariatur incidunt tenetur. Impedit illo sit suscipit modi?</p>
+                    <p class="news-par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente,
+                        corrupti
+                        fuga aspernatur explicabo exercitationem modi</p>
                 </article>
-            </section>
-            <section class="news6" data-aos="fade-left">
-                <article>
-                    <h3 class="news-title">Pac-Man': Live-Action Adaptation of Classic Arcade Game in the Works</h3>
+                <article class="col-12 col-sm-12 col-md-6" data-aos="fade">
+                    <h2 class="news-title">Pac-Man': Live-Action Adaptation of Classic Arcade Game in the Works</h2>
                     <img class="news-img" src="./img/pacman.jpg" alt="PacMan">
-                    <p class="news-par" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente, corrupti fuga aspernatur explicabo exercitationem modi dolor porro voluptate sit eaque obcaecati pariatur incidunt tenetur. Impedit illo sit suscipit modi?</p>
+                    <p class="news-par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente,
+                        corrupti
+                        fuga aspernatur explicabo exercitationem modi</p>
                 </article>
             </section>
-
-
+            <div class="container" id="next_rel">
+                <div class="row row-type-1 justify-content-center">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-3 active">
+                                <img src="./img/blackadam.jpg" class="d-block" alt="BlackAdam">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/antman.jpg" class="d-block" alt="Ant-Man">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/moonage.jpeg" class="d-block" alt="Moonage">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/nope.jpg" class="d-block" alt="NOPE">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/way-ofwater.jpg" class="d-block" alt="WayOfWater">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/policeman.jpg" class="d-block" alt="Policeman">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/furyofgods.jpg" class="d-block" alt="furyofgods">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
     </main>
-        
-        <section class="last" id="last-week">
-            <h2 class="last-title">LAST WEEK</h2>
-                    
-            <article class="last1">
-                <h3 class="last1-title">Avatar to release again before Avatar: The Way of Water releases in december</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero temporibus consequatur commodi totam, voluptatem</p>
-            </article>
-        
-            <article class="last2">
-                <h3 class="last2-title">Tom Cruise is not filming MI back to back</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero temporibus consequatur commodi totam, voluptatem labor.</p>
-            </article>
 
-            <article class="last3">
-                <h3 class="last3-title">Black Panther Wakanda Forever premier tickets on sale now! </h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum odit quas, modi commodi incidunt totam deleniti quis distinctio Lorem ips</p>
-            </article>
-            <article class="last4">
-                <h3 class="last4-title">Top Gun: Maverick': Paramount Announces Fan Appreciation Weekend to Celebrate Massive Box Office Success </h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum odit quas, modi commodi incidunt totam deleniti quis distinctio Lorem ips</p>
-            </article>
-
-        </section>
-
-        <section class="next-sec" id="next_sec">
-            <h2 class="next-title">UPCOMING RELEASES</h2>
-            <div class="next-div">
-                <article class="next-card">
-                    <img class="next-img" src="./img/blackadam.jpg" alt="BlackAdam">
-                    <h3>
-                        Black Adam  - 21/10/2022
-                    </h3>
-
-                    <a href="" class="next-btn">VER TRAILER</a>
-                </article>
-                <article class="next-card">
-                    <img class="next-img" src="./img/womanking.jpg" alt="WomanKing">
-                    <h3>
-                        Woman King - 16/09/2022
-                    </h3>
-
-                    <a href="" class="next-btn">VER TRAILER</a>
-                </article>
-                <article class="next-card">
-                    <img class="next-img" src="./img/policeman.jpg" alt="MyPoliceMan">
-                    <h3>
-                        My Police Man - 21/09/2022
-                    </h3>
-
-                    <a href="" class="next-btn">VER TRAILER</a>
-                </article>
-                <article class="next-card">
-                    <img class="next-img" src="./img/way-ofwater.jpg" alt="AvatarWayOfWater">
-                    <h3>
-                        Avatar: Way of Water - 16/12/2022
-                    </h3>
-
-                    <a href="" class="next-btn">VER TRAILER</a>
-                </article>
-                <article class="next-card">
-                    <img class="next-img" src="./img/furyofgods.jpg" alt="ShazamFuryOfGods">
-                    <h3>
-                        Shazam: Fury Of Gods - 21/12/2022
-                    </h3>
-
-                    <a href="" class="next-btn">VER TRAILER</a>
-                </article>
-                <article class="next-card">
-                    <img class="next-img" src="./img/nope.jpg" alt="Nope">
-                    <h3>
-                        NOPE - 22/07/2022
-                    </h3>
-
-                    <a href="" class="next-btn">VER TRAILER</a>
-                </article>
-                <article class="next-card">
-                    <img class="next-img" src="./img/moonage.jpeg" alt="Moonage">
-                    <h3>
-                        MoonageDayDream - 15/09/2022
-                    </h3>
-
-                    <a href="" class="next-btn">VER TRAILER</a>
-                </article>
+    <footer class="footer-location">
+        <div class="container-fluid">
+            <div class="row row-type-2 justify-content-center aling-items-center">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 footer-icon">
+                    <ul>
+                        <li class="bi-twitter"></li>
+                        <li class="bi-instagram"></li>
+                        <li class="bi-facebook"></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 footer-text">
+                    <h3>movieGate</h3>
+                    <p>"Lorem ipsum dolor sit amet."</p>
+                </div>
             </div>
-
-        </section>
-
-
-        
-
-        <footer>
-            <div class="foot-icon">
-                <ul>
-                    <li class="bi-instagram"></li>
-                    <li class="bi-facebook"></li>
-                    <li class="bi-twitter"></li>
-                    <li class="bi-youtube"></li>
-                </ul>
-            </div>
-            <div class="foot-tag">
-                <h3>moviesGates</h3>
-                <p>"Lorem ipsum dolor sit amet."</p>
-            </div>
-        </footer>
+        </div>
+    </footer>
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

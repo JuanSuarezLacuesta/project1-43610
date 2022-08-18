@@ -15,24 +15,20 @@ a{
 }
 
 
+
 /* ---HEADER--- */
 
-.header{
+.navbar{
     background-color: #1e1f2e;
-    color: #EDF2F4;
-
-
-    position: sticky;
-    top: 0px;
-    z-index: 1;
 }
 
-.header-title{
-    display: flex;
+.offcanvas{
+    background-color: #1e1f2e;
+    overflow: scroll;
 }
 
-.header-nav ul{
-    display: flex;
+.offcanvas-title{
+    color: white;
 }
 
 @keyframes move-title {
@@ -44,6 +40,8 @@ a{
     }
     
 }
+
+
 
 
 /* --- HERO --- */
@@ -72,28 +70,6 @@ a{
 
 @media (min-width: 320px) and (max-width: 749px){
 
-    /* --- HEADER --- */
-    .header-title{
-        justify-content: center;
-        padding: 0px 0px 5px 0px;
-    }
-
-    
-    
-    .header-nav ul{
-        justify-content: space-around;
-        align-items: center ;
-        font-size: 8px;
-
-        padding: 5px;
-    }
-
-    .header-nav ul li{
-        border: rgba(255, 255, 255, 0.411) 2px solid;
-
-        border-radius: 4px;
-
-    }
     
     /* --- HERO --- */
     .hero{
@@ -631,19 +607,6 @@ a{
 
 @media (min-width: 750px) and (max-width: 1023px)  {
 
-/* --- HEADER --- */
-.header-title{
-    justify-content: center;
-    padding: 0px 0px 5px 0px;
-}
-
-.header-nav ul{
-    justify-content: space-around;
-    align-items: center ;
-    font-size: 15px;
-
-    padding: 5px;
-}
 
 /* --- HERO --- */
 .hero{
@@ -1187,31 +1150,9 @@ footer{
 @media (min-width: 1024px) and (max-width: 1357px) {
 
 
-    .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 10px;
-    }
-
-    .header-nav{
-        width: 70vw;
-
-        padding: 0px 20px 0px 0px;
-    }
-
-    .header-title{
-        padding: 10px 10px 10px 30px;
-    }
-
-    .header-nav ul{
-        justify-content: space-between;
-        align-items: center;
-    }
 
     .hero{
-        height: 90vh;
+        height: 100vh;
     }
     
     .hero-text{
@@ -1808,32 +1749,8 @@ footer{
 
 @media (min-width: 1357px) {
 
-
-    .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 10px;
-    }
-
-    .header-nav{
-        width: 70vw;
-
-        padding: 0px 20px 0px 0px;
-    }
-
-    .header-title{
-        padding: 10px 10px 10px 30px;
-    }
-
-    .header-nav ul{
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .hero{
-        height: 90vh;
+        height: 100vh;
     }
     
     .hero-text{
@@ -1842,39 +1759,16 @@ footer{
 
 
     /* ---  INDEX --- */
+
 .main-index{
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 2fr) 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    background-color: #EDF2F4;
-    grid-template-areas: 
-    "blank1 news1 news11 side1"
-    "blank2 news2 news22 side2"
-    "blank3 news3 news33 side3";
-}
-.news1{
-    grid-area: news1;
-}
-.news2{
-    grid-area: news11;
-}
-.news3{
-    grid-area: news2;
-}
-.news4{
-    grid-area: news22;
-}
-.news5{
-    grid-area: news3;
-}
-.news6{
-    grid-area: news33;
+    background-color: #8d99aea9;
 }
 
+
 .news1{
-    width: 100%;
     background-color: #2B2D42;
-    border: #8D99AE solid 2px; 
+    border: #8D99AE solid 2px;
+    margin: 0px;
 }
 .news2{
     width: 100%;

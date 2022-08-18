@@ -1,81 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/bootstrap.css">
     <title>movieGate</title>
 </head>
+
 <body>
-    <header class="header">
-        <h1 class="header-title"><a href="../index.html">movieGate</a></h1>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="../index.html#last-week">LAST WEEK</a></li>
-                <li><a href="../index.html#next_sec">NEXT RELEASES</a></li>
-                <li><a href="./premier.html">PREMIERS</a></li>
-                <li><a href="./community.html">COMMUNITY</a></li>
-                <li><a href="./trailers.html">NEW TRAILERS</a></li>
-                <li><a href="./top.html">TOP FILMS</a></li>
-                <li><a href="./contact.html">CONTACT US</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-auto display" href="../index.html">movieGate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel">movieGate</h1>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./premier.html">PREMIERS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#next_rel">NEXT RELEASES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./reviews.html">REVIEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./trailers.html">TRAILERS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-    <main class="main-com">
-        <section class="com1"  data-aos="zoom-in">
-            <iframe  class="com-vids" src="https://www.youtube.com/embed/AIK5F7RTCs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore expedita</p>
-        </section>
-        <section class="com2" data-aos="zoom-in">
-            <iframe class="com-vids" src="https://www.youtube.com/embed/DbwLF4MPYhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores officia</p>
-        </section>
-        <section class="com3" data-aos="zoom-in">
-            <iframe class="com-vids" src="https://www.youtube.com/embed/tBkZCwarLYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque eos debitis nostrum</p>
-        </section>
-        <section class="com4" data-aos="zoom-in">
-            <iframe class="com-vids" src="https://www.youtube.com/embed/0Z2xukIpHm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque repellat assume</p>
-        </section>
-        <section class="com5" data-aos="zoom-in">
-            <iframe class="com-vids" src="https://www.youtube.com/embed/rijjiICP3T0?start=16" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, doloremque!</p>
-        </section>
+    <main class="main-index wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="com-title">REACTIONS</h1>
+                    <section>
+                        <iframe class="trailer-vid-3" src="https://www.youtube.com/embed/ouLgpWtSv-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="trailer-vid-3" src="https://www.youtube.com/embed/uQz4lA6gNLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="trailer-vid-3" src="https://www.youtube.com/embed/LayU65WIr2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="trailer-vid-3" src="https://www.youtube.com/embed/ZzJw2QqGQxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="com-title">HOW WAS IT?</h1>
+                    <section>
+                        <iframe class="trailer-vid-2" src="https://www.youtube.com/embed/BZOqhgg9RSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>In this video, Matt "Supes" Ramos takes you with him to the premiere of Marvel Studios' She-Hulk streaming on Disney Plus Thuursday August 18th and starring Tatiana Maslany, Mark Ruffalo, Tim Roth, Benedict Wong, Jameela Jamil and more!</p>
+                    </section>
+                    <section>
+                        <iframe class="trailer-vid-2" src="https://www.youtube.com/embed/zrMZOJrjFSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Join me on my first Red Carpet Movie Premiere!! Behind the Scenes, walking the Red Carpet, Radio Interviews, Cast Q&A. and much more. This is a movie that me and my mom are both in We had so much fun from the table reads, filming to the Premiere! This is definitely a moment to remember The movie got picked up for a series so make sure y'all stay tuned for Marvelous Southside Crew </p>
+                    </section>
 
+                    <h1 class="com-title">PODCASTS</h1>
+                    <h2 class="com-podcasts-title">Batman Unburied Spotify Podcast Sets Release Date</h2>
+                    <img  class="com-podcasts-img" src="../img/batman-podcasts.jpg" alt="Batman Unburied">
+                    <p>Spotify has announced the release date for their exclusive podcast Batman Unburied, which stars Black Panther star Winston Duke as Bruce Wayne. The original podcast project was created and executive produced by The Dark Knight writer David S. Goyer. DC previously announced the Spotify series as part of a multi-year, first-look licensing deal for podcasts based on popular DC characters.</p>
+
+                </div>
+            </div>
+        </div>
 
     </main>
 
-    <section class="com-tw">
-        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Who needs a guard dog? I got something better. Introducing claw-enforcement. <a href="https://twitter.com/hashtag/InternationalCatDay?src=hash&amp;ref_src=twsrc%5Etfw">#InternationalCatDay</a> <a href="https://t.co/mj02Aos4KW">pic.twitter.com/mj02Aos4KW</a></p>&mdash; Mark Ruffalo (@MarkRuffalo) <a href="https://twitter.com/MarkRuffalo/status/1556692257402658818?ref_src=twsrc%5Etfw">August 8, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </section>
+
+    <footer class="footer-location">
+        <div class="container-fluid">
+            <div class="row row-type-2 justify-content-center aling-items-center">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 footer-icon">
+                    <ul>
+                        <li class="bi-twitter"></li>
+                        <li class="bi-instagram"></li>
+                        <li class="bi-facebook"></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 footer-text">
+                    <h3>movieGate</h3>
+                    <p>"Lorem ipsum dolor sit amet."</p>
+                </div>
+            </div>
 
 
-    <footer>
-        <div class="foot-icon">
-            <ul>
-                <li class="bi-instagram"></li>
-                <li class="bi-facebook"></li>
-                <li class="bi-twitter"></li>
-                <li class="bi-youtube"></li>
-            </ul>
-        </div>
-        <div class="foot-tag">
-            <h3>moviesGates</h3>
-            <p>"Lorem ipsum dolor sit amet."</p>
         </div>
     </footer>
-    
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
+
 </html>

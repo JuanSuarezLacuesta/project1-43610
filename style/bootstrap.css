@@ -1,0 +1,355 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* -------- HEADER ------------ */
+body {
+    padding-top: 62px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+.navbar {
+    background-color: #1e1f2e;
+}
+
+.offcanvas {
+    background-color: #1e1f2e;
+}
+
+.offcanvas-title {
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+@keyframes move-title {
+    0% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        color: #EDF2F4;
+    }
+}
+
+
+
+
+/* ------------- HERO ------------ */
+.hero {
+    background: black url(../img/presentation.gif) center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-text {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 100px;
+
+    animation-name: move-title;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+
+/* ------------- INDEX ------------- */
+
+.main-index {
+    background-color: #8d99aea1;
+}
+
+.news-title {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.news-img {
+    width: 100%;
+    height: 300px;
+    border: black solid 2px;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+.news-par {
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.d-block {
+    width: 100%;
+    height: 60vh;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.row-type-1 {
+    background-color: #2B2D42;
+    border: #8D99AE solid 2px;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.row-type-2 {
+    background-color: #2B2D42;
+    color: white;
+
+
+}
+
+/* -------------- PREMIER ----------------- */
+
+
+.premier-title {
+    color: transparent;
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 100px;
+}
+
+.table {
+    background-color: #2B2D42;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.table tbody {
+    background-color: #575e6b;
+}
+
+@keyframes table-hover {
+    0% {
+        text-shadow: none;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #FFFFFF;
+    }
+
+}
+
+.table tbody tr:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF;
+
+    animation-name: table-hover;
+    animation-duration: 400ms;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.selection-pad {
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.row-type-3 {
+    padding: 20px;
+}
+
+/* ------------- TRAILERS ----------------- */
+.trailers-title {
+    color: transparent;
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 100px;
+}
+
+
+.container-padd {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row-type-4 {
+    background-color: #2B2D42;
+    color: white;
+    border: black solid 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.trailer-vid-1 {
+    width: 100%;
+    height: 600px;
+    border: #8D99AE solid 2px;
+}
+
+.trailer-vid-2 {
+    width: 100%;
+    height: 400px;
+    border: #8D99AE solid 2px;
+}
+
+/* --------------- REVIEWS ---------------- */
+
+.reviews-titles {
+    text-align: start;
+    color: white;
+}
+
+.review-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #575e6b;
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+.review-img-type-1 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+
+.review-dot-0 {
+    color: white;
+    font-size: 50px;
+}
+
+.review-dot-1 {
+    color: #ffaa00;
+    font-size: 50px;
+}
+
+.review-shadow {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+/* ----------------- COMMUNITY ------------------- */
+
+.com-title {
+    color: transparent;
+    background: white;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 100px;
+}
+
+
+.trailer-vid-3 {
+    width: 100%;
+    height: 600px;
+    border: #8D99AE solid 10px;
+}
+
+.com-podcasts-title {
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    color: #FFFFFF;
+}
+
+.com-podcasts-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* ---------------------- CONTACT US ------------------------ */
+
+
+.contact-title{
+    color: transparent;
+    background: white;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 100px;
+}
+
+.form-label{
+    color: #1e1f2e;
+}
+
+.contact-btn{
+    background-color: #4a4f81;
+    color: #EDF2F4;
+    border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+/* --------------- FOOTER ---------------- */
+
+
+.footer-location {
+    position: sticky;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon ul {
+    display: flex;
+}
+
+.footer-icon ul li {
+    padding: 10px;
+}
