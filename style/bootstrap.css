@@ -77,6 +77,10 @@ body {
     animation-iteration-count: 1;
 }
 
+.hero-sub-text{
+    font-size: 30%;
+}
+
 
 /* ------------- INDEX ------------- */
 
