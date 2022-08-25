@@ -1,0 +1,49 @@
+@keyframes move-title {
+    0% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        color: #EDF2F4;
+    }
+}
+
+.hero {
+    background: black url(../img/presentation.gif) center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    &-text{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 100px;
+    
+        animation-name: move-title;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+    }
+    &-sub-text{
+        font-size: 30%;
+    }
+}
+
+
+
+
+
+// .hero-text {
+//     color: rgb(255, 255, 255);
+//     text-align: center;
+//     font-size: 100px;
+
+//     animation-name: move-title;
+//     animation-duration: 5s;
+//     animation-delay: 0s;
+//     animation-iteration-count: 1;
+// }
+
+// .hero-sub-text {
+//     font-size: 30%;
+// }

@@ -1,0 +1,21 @@
+@import 'utils/variables';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+@import 'base/animations';
+
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/footer';
+
+@import 'pages/index.scss';
+@import 'pages/contact.scss';
+@import 'pages/community.scss';
+@import 'pages/premier.scss';
+@import 'pages/reviews.scss';
+@import 'pages/trailers.scss';
+
+
+
+

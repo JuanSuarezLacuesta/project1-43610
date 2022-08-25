@@ -1,0 +1,21 @@
+.footer-location {
+    position: sticky;
+
+}
+.footer-text {
+    text-align: center;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon ul {
+    display: flex;
+}
+
+.footer-icon ul li {
+    padding: 10px;
+}

@@ -1,0 +1,51 @@
+.premier-title {
+    color: transparent;
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 100px;
+}
+
+.table {
+    background-color: #2B2D42;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.table tbody {
+    background-color: #575e6b;
+}
+
+@keyframes table-hover {
+    0% {
+        text-shadow: none;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #FFFFFF;
+    }
+
+}
+
+.table tbody tr:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF;
+
+    animation-name: table-hover;
+    animation-duration: 400ms;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.selection-pad {
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.row-type-3 {
+    padding: 20px;
+}
