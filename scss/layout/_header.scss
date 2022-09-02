@@ -1,15 +1,13 @@
 .navbar {
     background-color: #1e1f2e;
+    &-brand{
+        font-size: 1.5rem;
+    }
 }
 
 .offcanvas {
     background-color: #1e1f2e;
-}
-
-.offcanvas-title {
-    color: white;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
+    &-title{
+        color: white;
+    }
 }

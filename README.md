@@ -8,3 +8,14 @@ El cambio a SCSS fue realizado con exito:
 "&": agregue en layout/_hero.scss".
 Solo use una variable ya que no se me ocurria algun otra y queria implementarlo en la pagina, esta se aplica en ".main-index"
 
+SASSII
+
+- Utilice todo lo pedido por el desafio:
+
+    Mixin en scss/base/_base.scss
+    Extend en scss/pages/trailers.scss, review.scss, premier.scss, contact.scss
+    Map en scss/utils/_variables.scss
+    map-get en scss/base/_base.scss
+
+Para Keywords y SEO me parecio normal las que ya tengo como los nombres de las paginas y subtitulos en las mismas
+
