@@ -32,7 +32,7 @@ body {
   background-color: rgba(141, 153, 174, 0.631372549);
 }
 
-.trailer-title, .review-title, .premier-title, .contact-title {
+.trailer-title, .review-title, .premier-title, .contact-title, .new-movies {
   color: transparent;
   background: white;
   -webkit-background-clip: text;
@@ -167,6 +167,10 @@ body {
   padding: 20px;
 }
 
+.new-movies {
+  font-size: 5rem;
+}
+
 .form-label {
   color: #1e1f2e;
 }
@@ -175,6 +179,7 @@ body {
   background-color: #4a4f81;
   color: #EDF2F4;
   border-radius: 0px;
+  margin: 10px;
 }
 
 .com-title {
@@ -203,6 +208,10 @@ body {
   border: #8D99AE solid 10px;
 }
 
+.premier-title {
+  font-size: 90px;
+}
+
 .table {
   background-color: #2B2D42;
   color: white;
@@ -224,6 +233,11 @@ body {
 .selection-pad {
   padding-top: 31px;
   padding-bottom: 31px;
+}
+
+.btn-color {
+  background-color: #2B2D42;
+  color: #FFFFFF;
 }
 
 .reviews {

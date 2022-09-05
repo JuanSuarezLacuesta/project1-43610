@@ -1,5 +1,6 @@
 .premier-title {
     @extend %title-style-1;
+    font-size: 90px;
 }
 
 .table {
@@ -25,5 +26,10 @@
 .selection-pad {
     padding-top: 31px;
     padding-bottom: 31px;
+}
+
+.btn-color{
+    background-color: map-get($palette-1, "background" );
+    color: #FFFFFF;
 }
 

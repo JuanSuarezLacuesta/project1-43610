@@ -31,3 +31,9 @@
     padding: 20px;
 }
 
+
+.new-movies{
+    font-size: 5rem;
+    @extend %title-style-1;
+
+}
