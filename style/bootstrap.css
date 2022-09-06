@@ -83,6 +83,14 @@ body {
     color: #EDF2F4;
   }
 }
+@keyframes link-move {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #00b4d8;
+  }
+}
 .navbar {
   background-color: #1e1f2e;
 }
@@ -98,7 +106,7 @@ body {
 }
 
 .hero {
-  background: black url(../img/presentation.gif) center/cover no-repeat;
+  background: black url(../img/hero.gif) center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,8 +121,11 @@ body {
   animation-delay: 0s;
   animation-iteration-count: 1;
 }
+.hero-title {
+  font-size: 100px;
+}
 .hero-sub-text {
-  font-size: 30%;
+  font-size: 40%;
 }
 
 .footer {
@@ -134,27 +145,39 @@ body {
 .footer-icon ul li {
   padding: 10px;
 }
+.footer-links {
+  color: white;
+}
+.footer-links:hover {
+  animation-name: link-move;
+  animation-duration: 300ms;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
 
 .news-type-1 {
   background-color: #2B2D42;
   border: #8D99AE solid 2px;
   border-radius: 20px;
   color: white;
+  padding: 10px;
 }
 .news-type-1-title {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   color: white;
-  padding: 5px;
+  padding: 10px;
+  background-color: rgba(28, 30, 44, 0.4431372549);
+  border-radius: 8px;
 }
 .news-type-1-img {
   width: 100%;
-  height: 300px;
   border: black solid 2px;
   border-radius: 2px;
   object-fit: cover;
 }
 .news-type-1-par {
+  font-size: 20px;
   text-align: center;
   color: white;
   padding: 5px;
@@ -200,11 +223,18 @@ body {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  border: #8D99AE solid 10px;
 }
 
 .trailer-vid-3 {
   width: 100%;
   height: 600px;
+  border: #8D99AE solid 10px;
+}
+
+.trailer-vid-2 {
+  width: 100%;
+  height: 350px;
   border: #8D99AE solid 10px;
 }
 
@@ -235,6 +265,10 @@ body {
   padding-bottom: 31px;
 }
 
+.btn:hover {
+  background-color: #2B2D42;
+  color: #2A9D8F;
+}
 .btn-color {
   background-color: #2B2D42;
   color: #FFFFFF;
@@ -252,7 +286,7 @@ body {
 .reviews-titles {
   text-align: start;
   color: white;
-  padding: 5px;
+  padding: 10px;
 }
 .reviews-block {
   display: flex;
@@ -263,22 +297,24 @@ body {
 }
 .reviews-img {
   width: 100%;
-  height: 300px;
   object-fit: cover;
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
+}
+.reviews-text {
+  font-size: 30px;
 }
 
 .review-dot-0 {
   color: white;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .review-dot-1 {
   color: #ffaa00;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .trailers {
@@ -292,8 +328,11 @@ body {
 }
 .trailers-vid-2 {
   width: 100%;
-  height: 400px;
+  height: 350px;
   border: #8D99AE solid 2px;
+}
+.trailers-title {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */

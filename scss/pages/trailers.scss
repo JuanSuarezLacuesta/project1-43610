@@ -6,6 +6,7 @@
 .trailers {
     margin-top: 20px;
     margin-bottom: 20px;
+    
     &-vid-1{
         width: 100%;
         height: 600px;
@@ -13,7 +14,10 @@
     }
     &-vid-2{
         width: 100%;
-        height: 400px;
+        height: 350px;
         border: #8D99AE solid 2px;
+    }
+    &-title{
+        padding: 10px;
     }
 }

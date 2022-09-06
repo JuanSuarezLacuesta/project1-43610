@@ -28,8 +28,15 @@
     padding-bottom: 31px;
 }
 
-.btn-color{
-    background-color: map-get($palette-1, "background" );
-    color: #FFFFFF;
+.btn{
+    &:hover{
+        background-color: map-get($palette-1, "background" );
+        color: map-get($palette-1 , "purchase" );
+    }
+    &-color{
+        background-color: map-get($palette-1, "background" );
+        color: #FFFFFF;
+    }
 }
+
 

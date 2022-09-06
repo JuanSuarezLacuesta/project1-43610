@@ -1,5 +1,5 @@
 .hero {
-    background: black url(../img/presentation.gif) center / cover no-repeat;
+    background: black url(../img/hero.gif) center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +14,11 @@
         animation-delay: 0s;
         animation-iteration-count: 1;
     }
+    &-title{
+        font-size: 100px;
+    }
     &-sub-text{
-        font-size: 30%;
+        font-size: 40%;
     }
 }
 

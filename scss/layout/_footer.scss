@@ -14,4 +14,13 @@
         }
     }
 }
+&-links{
+    color: white;
+}
+&-links:hover{
+    animation-name: link-move;
+    animation-duration: 300ms;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
 }
