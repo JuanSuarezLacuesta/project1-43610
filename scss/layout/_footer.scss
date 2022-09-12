@@ -16,11 +16,14 @@
 }
 &-links{
     color: white;
+    font-size: 25px;
 }
 &-links:hover{
     animation-name: link-move;
     animation-duration: 300ms;
     animation-delay: 0s;
     animation-iteration-count: 1;
+    color: #00b4d8;
 }
+
 }

@@ -4,16 +4,17 @@
 }
 
 .table {
-    background-color: #2B2D42;
+    background-color: map-get($palette-1, "background");
     color: white;
     border-radius: 10px;
     text-align: center;
+    font-size: 20px;
     & tbody{
         background-color: #575e6b;
         tr:hover{
             color: #FFFFFF;
             text-shadow: 0 0 10px #FFFFFF;
-        
+
             animation-name: table-hover;
             animation-duration: 400ms;
             animation-delay: 0s;
@@ -28,15 +29,53 @@
     padding-bottom: 31px;
 }
 
+.form{
+    &-control{
+        border: map-get($palette-1, "background") 3px solid;
+        border-radius: 5px;
+    }
+    &-select{
+        border: map-get($palette-1, "background") 3px solid;
+        border-radius: 5px;
+    }
+
+}
+
 .btn{
     &:hover{
-        background-color: map-get($palette-1, "background" );
+        background-color: map-get($palette-1, "background");
         color: map-get($palette-1 , "purchase" );
     }
     &-color{
         background-color: map-get($palette-1, "background" );
         color: #FFFFFF;
     }
+}
+
+.checkmark__circle{
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: map-get($palette-1 , "purchase");
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+}
+.checkmark{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px map-get($palette-1 , "purchase");
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+.checkmark__check{
+    transform-origin: 50% 50%;stroke-dasharray: 48;stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
 }
 
 
