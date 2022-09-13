@@ -4,3 +4,11 @@ Hola, Marco, supongo que estaras leyendo esto, queria dejar en claro un par de c
     -  Tambien un par de fotos tienen un tamanio superior al del acordado
   Queria dejar en claro que TODAS las fotos fueron comprimidas mas de una vez (quitando el gif del hero que fue comprimida una sola vez), llegado a un punto las fotos no   se comprimian mas de 1% asi que no vi ningun beneficio de la misma.
   Muchas gracias por todo!
+  
+  Te dejo por aqui los links a la pagina subida y al google drive:
+  
+  https://drive.google.com/file/d/1Ys0Ur64nKmdPEzcIo887sr4U_2BGoG6L/view?usp=sharing
+  
+  https://cheerful-syrniki-000970.netlify.app
+  
+  
