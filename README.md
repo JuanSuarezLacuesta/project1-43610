@@ -7,7 +7,7 @@ Hola, Marco, supongo que estaras leyendo esto, queria dejar en claro un par de c
   
   Te dejo por aqui los links a la pagina subida y al google drive:
   
-  https://drive.google.com/file/d/1Ys0Ur64nKmdPEzcIo887sr4U_2BGoG6L/view?usp=sharing
+  https://drive.google.com/file/d/1h06_5TcKnd0cqJoMlANU8_KrPFx6vVxm/view?usp=sharing
   
   https://cheerful-syrniki-000970.netlify.app
   
