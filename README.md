@@ -1,21 +1,6 @@
-Bootstrap fue utilizado a su maximo ya que me agrado el uso del mismo, una vez que me acostumbre no podia pensar de otra manera.
-La idea de cambiar la font-size del index-hero me gustó al principio pero despues de probar distintos tamaño me gusta que tenga un tamaño grande para los dispositivos celulares ya que nunca fue la diea que se viera lo de detras (en este caso un gif) si no que se leyera el titulo y se siguiera scrolling down.
-Realice cambios para que no se rompiera el apartado de community.
-por ultimo realice un final commit en la rama main, porque no me parecio agregar una branch solamente para cambiar la funte y el estilo de unos titulos de community.html
+Hola, Marco, supongo que estaras leyendo esto, queria dejar en claro un par de cosas como por ejemplo el size de algunas fotos de la web:
 
-
-El cambio a SCSS fue realizado con exito:
-"&": agregue en layout/_hero.scss".
-Solo use una variable ya que no se me ocurria algun otra y queria implementarlo en la pagina, esta se aplica en ".main-index"
-
-SASSII
-
-- Utilice todo lo pedido por el desafio:
-
-    Mixin en scss/base/_base.scss
-    Extend en scss/pages/trailers.scss, review.scss, premier.scss, contact.scss
-    Map en scss/utils/_variables.scss
-    map-get en scss/base/_base.scss
-
-Para Keywords y SEO me parecio normal las que ya tengo como los nombres de las paginas y subtitulos en las mismas
-
+    - En mi caso tengo un gif de "hero", el cual tiene un tamanio un poco mas grande de lo normal
+    -  Tambien un par de fotos tienen un tamanio superior al del acordado
+  Queria dejar en claro que TODAS las fotos fueron comprimidas mas de una vez (quitando el gif del hero que fue comprimida una sola vez), llegado a un punto las fotos no   se comprimian mas de 1% asi que no vi ningun beneficio de la misma.
+  Muchas gracias por todo!
