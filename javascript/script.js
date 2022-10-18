@@ -28,7 +28,7 @@ let premier1 = prompt("Which premier you do you wish to attend?. These are the o
 movies(premier1);
 
 while (!movies) {
-    premier1 = prompt("Tickets are sold out. These are the options: Black Adam, Avatar, Blonde, Woman King, Black Panther");
+    premier1 = prompt("TICKETS ARE SOLD OUT. These are the options: Black Adam, Avatar, Blonde, Woman King, Black Panther");
     movies(premier1);
 
     function movies(movie) {
