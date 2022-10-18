@@ -1,73 +1,53 @@
-function movies(movie) {
-    switch (movie) {
-        case "Black Adam":
-        case "black adam":
-        case "avatar":
-        case "blonde":
-        case "Blonde":
-        case "Avatar":
-        case "salir":
-            movies = true;
-            console.log("tickets are aviable " + movies);
-            break;
-        case "Woman King":
-        case "woman king":
-        case "black panther":
-        case "Black Panther":
-            movies = false;
-            console.log("tickets are unaviable " + movies);
-            break;
-        default:
-            movies = false;
-            console.log("tickets dont exist")
+
+class MoviePremiers{
+    constructor(title, date, place, seats){
+        this.title = title;
+        this.date = date;
+        this.place = place;
+        this.seats = seats;
+    }
+    purchaseTicket(){
+        let amount = parseInt(prompt("How many seats would you like to purchase?")); 
+        let cont = this.seats - amount;
+        this.seats = cont;
+        const total = amount * 40;
+        alert("You purchased " + amount + "seats for " + this.title + "," + " your total for this purchase is: " + total + "$");
     }
 }
 
+const movie1 = new MoviePremiers("Black Adam", "15/10", "Los Angeles", 23);
+const movie2 = new MoviePremiers("Avatar: Way of Water", "10/12", "Madrid", 209);
+const movie3 = new MoviePremiers("Blonde", "10/9", "Paris", 51);
+const movie4 = new MoviePremiers("Woman King", "12/9", "San Francisco", 0);
+const movie5 = new MoviePremiers("Black Panther", "5/11", "Los Angeles", 0);
 
-let premier1 = prompt("Which premier you do you wish to attend?. These are the options: Black Adam, Avatar, Blonde, Woman King, Black Panther");
-movies(premier1);
+const selectionMovies = [movie1, movie2, movie3, movie4, movie5];
 
-while (!movies) {
-    premier1 = prompt("TICKETS ARE SOLD OUT. These are the options: Black Adam, Avatar, Blonde, Woman King, Black Panther");
-    movies(premier1);
-
-    function movies(movie) {
-        switch (movie) {
-            case "Black Adam":
-            case "black adam":
-            case "avatar":
-            case "blonde":
-            case "Blonde":
-            case "Avatar":
-            case "salir":
-                movies = true;
-                console.log( "tickets are aviable " + movies);
-                break;
-            case "Woman King":
-            case "woman king":
-            case "black panther":
-            case "Black Panther":
-                movies = false;
-                console.log("tickets are unaviable " + movies);
-                break;
-            default:
-                movies = false;
-                console.log("tickets dont exist")
+function purchase (movie) {
+    for (let i = 0; i < 5; i++) { 
+        if (movie == selectionMovies[i].title) {
+            alert(selectionMovies[i].title + "has " + selectionMovies[i].seats + " seats aviable for the " + selectionMovies[i].date);
+            if (selectionMovies[i].seats <= 0) {
+                alert("TICKETS ARE SOLD OUT FOR THIS PREMIER");
+            } else {
+                const name1 = prompt("Please enter your name:");
+                const phone1 = prompt("Your phone number:");
+                const email1 = prompt("And last, your email:");
+                selectionMovies[i].purchaseTicket();
+                alert ("A ticket with your name: " + name1 + " your phone number: " + phone1 + " and your email: " + email1 + "has been created for you to pay in person");
+            }
         }
     }
 }
-if (premier1 !== "salir") {
-    const name1 = prompt("Your name:");
-const surname1 = prompt("Your surname:");
-const phone1 = prompt("Your phone:");
-const email1 = prompt("And last, your email:");
 
-let ticket = prompt("How many tickets do you wish to purchase:")
- if (ticket < 5) {
-    let fullPrice = ticket * 40;
-    alert("Your purchase has been reserved to pay in person with this information. Your name: " + name1 + " " + surname1 + " your phone number: " + phone1 + " and your email: " + email1 + "The full price of your purchase is " + fullPrice + "$")
- } else if (ticket >= 5) {
-    alert("The limit for purchase of tickets per movie is 4, please try again.")
- }
+
+
+
+
+const premier1 = prompt("Which premier you do you wish to attend?. These are the options: Black Adam, Avatar, Blonde, Woman King, Black Panther");
+if (premier1 !== "salir") {
+    purchase(premier1);
 }
+
+
 
