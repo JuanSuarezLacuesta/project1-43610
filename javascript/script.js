@@ -44,7 +44,7 @@ function purchase (movie) {
 
 
 
-const premier1 = prompt("Which premier you do you wish to attend?. These are the options: Black Adam, Avatar, Blonde, Woman King, Black Panther");
+const premier1 = prompt("Which premier you do you wish to attend?. These are the options: Black Adam, Avatar: Way of Water, Blonde, Woman King, Black Panther");
 if (premier1 !== "salir") {
     purchase(premier1);
 }
