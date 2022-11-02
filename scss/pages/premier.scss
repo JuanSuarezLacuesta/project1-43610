@@ -28,6 +28,9 @@
     padding-top: 31px;
     padding-bottom: 31px;
 }
+.selection-pad-2 {
+    padding-top: 31px;
+}
 
 .form{
     &-control{
@@ -78,4 +81,84 @@
     animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
 }
 
+.seats{
+    font-size: 25px;
+    color: map-get($palette-1, "background" );
+    &-row{
+        padding: 0px;
+        margin: 0px;
+    }
+    &-container{
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    &-placement{
+        display: flex;
+        padding: 0px;
+        &-side-left{
+            display: flex;
+            padding: 0px;
+        }
+    }
+    &-empty{
+       color: map-get($palette-1, "clear" );
+    }
+    &-taken{
+        color: map-get($palette-1,"taken" );
+    }
+    &-select{
+        color: map-get($palette-1, "purchase" );
+    }
+    
+}
 
+.screen{
+    width: 600px;
+    height: 10px;
+    background-color: map-get($palette-1, "background" );
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+@media (min-width: 375px) and (max-width:768px) {
+    .seats{
+        font-size: 25px;
+        &-row{
+            padding: 0px;
+            margin: 0px;
+            overflow-x: scroll;
+        }
+        &-container{
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+        }
+        &-placement{
+            display: flex;
+            padding: 0px;
+            &-side-left{
+                display: flex;
+                padding: 0px;
+                overflow-x: hidden;
+            }
+        }
+        &-clear{
+           color: rgba(255, 255, 255, 0);
+        }
+    }
+}

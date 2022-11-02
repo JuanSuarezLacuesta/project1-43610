@@ -50,3 +50,50 @@ if (premier1 !== "salir") {
     purchase(premier1);
 }
 
+
+
+// <article class="col-12 seats-center">
+//                     <span class="bi bi-person-fill seats" id="11"></span>
+//                     <span class="bi bi-person-fill seats" id="12"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats" id="119"></span>
+//                     <span class="bi bi-person-fill seats" id="120"></span>
+                    
+//                 </article>
+//                 <article class="col-12 seats-center">
+//                     <span class="bi bi-person-fill seats" id="21"></span>
+//                     <span class="bi bi-person-fill seats" id="22"></span>
+//                     <span class="bi bi-person-fill seats" id="23"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats seats-empty"></span>
+//                     <span class="bi bi-person-fill seats" id="218"></span>
+//                     <span class="bi bi-person-fill seats" id="219"></span>
+//                     <span class="bi bi-person-fill seats" id="220"></span>
+//                 </article>

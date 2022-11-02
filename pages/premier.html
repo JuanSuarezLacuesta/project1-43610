@@ -137,49 +137,64 @@
             </article>
         </section>
 
-        <div class="container">
-            <section class="row-type-3 row justify-content-center">
+        <section class="container">
+            <form class="row-type-3 row justify-content-center" id="formInfo">
+                
                 <article class="col-lg-3">
-                    <form>
+                    
                         <div class="mb-5">
-                            <label for="name-id" class="form-label">Name</label>
+                            <label for="name-id" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id="name-id" aria-describedby="nameHelp">
-                            <div id="nameHelp" class="form-text">Name (+ Second Name)</div>
                         </div>
                         <div class="form-floating mb-5">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="email-id" placeholder="name@example.com">
                             <label for="floatingInput">Email address</label>
                         </div>
-                    </form>
+                    
                 </article>
                 <article class="col-lg-3">
-                    <form>
-                        <div class="mb-5">
-                            <label for="surname" class="form-label">Surname</label>
-                            <input type="text" class="form-control" id="surname-id" aria-describedby="surnameHelp">
-                            <div id="surnameHelp" class="form-text">First Surname</div>
+                    
+                        <div class="mb-5 selection-pad-2">
+                            <select class="form-select" aria-label="Default select" id="ticketType">
+                                <option selected value="0">Choose Type Of Ticket</option>
+                                <option value="1">Normal Ticket</option>
+                                <option value="2">Premium Ticket</option>
+                                <option value="3">Press Ticket</option>
+                            </select>
                         </div>
                         <div class="form-floating mb-5">
-                            <input type="number" class="form-control" id="floatingInput" placeholder="+111-111-111">
+                            <input type="number" class="form-control" id="phone-id" placeholder="+111-111-111">
                             <label for="floatingInput">Phone Number</label>
                         </div>
-                    </form>
+                    
                 </article>
                 <article class="selection-pad col-lg-6">
-                    <select class="form-select" aria-label="Default select">
-                        <option selected>Choose the Movie</option>
-                        <option value="1">Black Adam</option>
-                        <option value="2">Avatar: The Way Of Water</option>
-                        <option value="3">Blonde</option>
-                        <option value="4">Woman King</option>
-                        <option value="5">Black Panther: Wakanda Forever</option>
-                    </select>
+                    
+                        <select class="form-select" aria-label="Default select" id="movie-id">
+                            <option selected value="0">Choose the Movie</option>
+                            <option value="1">Black Adam</option>
+                            <option value="2">Avatar: The Way Of Water</option>
+                            <option value="3">Blonde</option>
+                            <option value="4">Woman King</option>
+                            <option value="5">Black Panther: Wakanda Forever</option>
+                        </select>
+                        <div class="selection-pad-2">
+                            <select class="form-select" aria-label="Default select" id="cantSeats">
+                                <option selected value="0">How Many Seats?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                    
+                    </div>
+                    
                 </article>
-                <a href="./purchase-confirmed.html" class="btn btn-color" id="button-purchase">PURCHASE</a>
-                <!-- <button type="submit"class="btn btn-color" id="button-purchase">PURCHASE</button> -->
+                    <button class="btn btn-color" type="submit" id="nextStep">SELECT SEATS</button>
 
-            </section>
-        </div>
+            </form>
+        </section>
 
 
 
@@ -224,7 +239,7 @@
         AOS.init();
     </script>
     <!-- JS -->
-    <script src="../javascript/script.js" defer></script>
+    <script src="../javascript/ticketInfo.js" defer></script>
 </body>
 
 </html>

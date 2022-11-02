@@ -62,5 +62,3 @@ if (premier1 !== "salir") {
     purchase(premier1);
 }
 
-
-
