@@ -57,9 +57,6 @@ thisSeat.addEventListener("click", (e) => {
         })
     } else {
 
-        if (takenSeats.length < num2) {
-            
-        }
         takenSeats.push(target);
     }
     
