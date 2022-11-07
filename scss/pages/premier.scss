@@ -53,6 +53,9 @@
         background-color: map-get($palette-1, "background" );
         color: #FFFFFF;
     }
+    &-place{
+        margin: 20px;
+    }
 }
 
 .checkmark__circle{
