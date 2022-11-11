@@ -6,13 +6,6 @@ class MoviePremiers {
         this.place = place;
         this.seats = seats;
     }
-    purchaseTicket() {
-        let amount = parseInt(prompt("How many seats would you like to purchase?"));
-        let cont = this.seats - amount;
-        this.seats = cont;
-        const total = amount * 40;
-        alert("You purchased " + amount + " seats for " + this.title + "," + " your total for this purchase is: " + total + "$");
-    }
 }
 
 const movie1 = new MoviePremiers("Black Adam", "15/10", "Los Angeles", 23);
@@ -25,6 +18,8 @@ const selectionMovies = [movie1, movie2, movie3, movie4, movie5];
 
 
 // ----------TICKETS-----------//
+
+
 
 let tickets = [];
 

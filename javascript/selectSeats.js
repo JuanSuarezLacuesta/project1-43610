@@ -1,3 +1,13 @@
+/* FUNCIONES */
+function blockSeat(seats) {
+    
+    
+    
+    seats.forEach(element => {
+        
+    });
+}
+
 
 
 let seats = document.getElementById("seats");
@@ -10,10 +20,13 @@ const user = ticket[ticket.length - 1];
 let num1 = 0;
 let takenSeats = [];
 
-
-
-
 console.log(user);
+
+
+
+
+
+
 
 
 thisSeat.addEventListener("click", (e) => {
@@ -34,22 +47,43 @@ thisSeat.addEventListener("click", (e) => {
         
         } else {
             
-            seat.className = "bi bi-person-fill seats seats-select"
-            takenSeats.push(targetId);
+            if ( takenSeats.length < user.amountSeats) {
+                seat.className = "bi bi-person-fill seats seats-select"
+                takenSeats.push(targetId);
+                
+            }
         
         }     
         
         console.log(takenSeats);
-    
     } 
     
 });
 
 
 
+thisSeat.addEventListener("submit", (e) => {
+    
+    takenSeats.forEach(element => {
+        
+    });
 
 
+})
 
+
+const lockSeats = document.getElementById("nextStep");
+
+lockSeats.addEventListener("click", (e) => {
+    
+    user.seats = takenSeats;
+    console.log(user);
+    
+    localStorage.setItem("taken", JSON.stringify(takenSeats));
+    
+
+
+})
 
 
 
