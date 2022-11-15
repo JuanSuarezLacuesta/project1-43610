@@ -425,6 +425,12 @@ body {
     color: rgba(255, 255, 255, 0);
   }
 }
+.try-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
 .reviews {
   margin-top: 20px;
   margin-bottom: 20px;

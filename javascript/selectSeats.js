@@ -1,12 +1,12 @@
 /* FUNCIONES */
-function blockSeat(seats) {
-    
-    
-    
-    seats.forEach(element => {
-        
+
+function blockSeats(array) {
+    array.forEach(element => {
+        let seat = document.getElementById(element)
+        seat.className = "bi bi-person-fill seats seats-taken"
     });
 }
+
 
 
 
@@ -22,57 +22,47 @@ let takenSeats = [];
 
 console.log(user);
 
+//boton
+const lockSeats = document.getElementById("nextStep");
+//bptpn disable
+lockSeats.disabled = true;
 
 
 
 
-
-
-
+//seleccion y cambio de color de asientos
 thisSeat.addEventListener("click", (e) => {
     let seat = e.target; 
     let targetId = parseInt(e.target.id);
-    console.log(targetId);
     
     if (!Number.isNaN(targetId)) {
-        
+         
         if (takenSeats.includes(targetId)) {
-
+            
             seat.className = "bi bi-person-fill seats"
-
             takenSeats = takenSeats.filter((element) => {
                 return element !== targetId;
-            
             })
         
         } else {
-            
+           
             if ( takenSeats.length < user.amountSeats) {
                 seat.className = "bi bi-person-fill seats seats-select"
                 takenSeats.push(targetId);
-                
+                console.log(takenSeats.length);
+                if (takenSeats.length === user.amountSeats) {
+                    lockSeats.disabled = false
+                }
             }
-        
-        }     
-        
-        console.log(takenSeats);
+            
+        }
+
     } 
-    
+
 });
 
 
 
-thisSeat.addEventListener("submit", (e) => {
-    
-    takenSeats.forEach(element => {
-        
-    });
-
-
-})
-
-
-const lockSeats = document.getElementById("nextStep");
 
 lockSeats.addEventListener("click", (e) => {
     
@@ -80,9 +70,15 @@ lockSeats.addEventListener("click", (e) => {
     console.log(user);
     
     localStorage.setItem("taken", JSON.stringify(takenSeats));
-    
+    localStorage.setItem("reserved", JSON.stringify(user));
 
+    blockSeats(takenSeats);
 
+    lockSeats.innerHTML = "LOADING"
+
+    setTimeout(() =>{
+        window.location.href = "purchase-confirmed.html"
+    },1000);
 })
 
 
