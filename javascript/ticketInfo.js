@@ -1,25 +1,4 @@
-// ----- OBJETOS DE PELICULAS ---- //
-class MoviePremiers {
-    constructor(title, date, place, seats) {
-        this.title = title;
-        this.date = date;
-        this.place = place;
-        this.seats = seats;
-    }
-}
-
-const movie1 = new MoviePremiers("Black Adam", "15/10", "Los Angeles", 23);
-const movie2 = new MoviePremiers("Avatar: Way of Water", "10/12", "Madrid", 209);
-const movie3 = new MoviePremiers("Blonde", "10/9", "Paris", 51);
-const movie4 = new MoviePremiers("Woman King", "12/9", "San Francisco", 0);
-const movie5 = new MoviePremiers("Black Panther", "5/11", "Los Angeles", 0);
-
-const selectionMovies = [movie1, movie2, movie3, movie4, movie5];
-
-
 // ----------TICKETS-----------//
-
-
 
 let tickets = [];
 
@@ -29,12 +8,19 @@ if (ticketsStorage !== null) {
     tickets = JSON.parse(ticketsStorage);
 }
 
+
+    
+
+
+
+
 const form = document.getElementById("formInfo");
 
 form.addEventListener("submit", (e) => {
 
     e.preventDefault();
 
+    
     const inputName = document.getElementById("name-id");
     const name = inputName.value;
     const inputPhone = document.getElementById("phone-id");
@@ -49,7 +35,7 @@ form.addEventListener("submit", (e) => {
     let inputTicket = document.getElementById("ticketType");
     const ticketType = inputTicket.value;
 
-    console.log(name);
+    
     console.log(phone);
     console.log(email);
     console.log(movieSelect);
@@ -69,14 +55,16 @@ form.addEventListener("submit", (e) => {
     
 });
 
+
+
+
 // -------------- BOTON PARA MOVERSE A BUSCAR SEATS --------------- //
 
 
 const findSeats = document.getElementById("nextStep");
 
-findSeats.addEventListener("click", (e) => {
-    window.location.href = "purchase-seats.html";
-
+findSeats.addEventListener("click", () => {
+        window.location.href = "purchase-seats.html";
 })
 
 

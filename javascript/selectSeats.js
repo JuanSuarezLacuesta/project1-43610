@@ -51,7 +51,7 @@ thisSeat.addEventListener("click", (e) => {
                 takenSeats.push(targetId);
                 console.log(takenSeats.length);
                 if (takenSeats.length === user.amountSeats) {
-                    lockSeats.disabled = false
+                    lockSeats.disabled = false;
                 }
             }
             

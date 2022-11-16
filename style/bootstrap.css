@@ -425,10 +425,19 @@ body {
     color: rgba(255, 255, 255, 0);
   }
 }
-.try-box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+.ticketInfo {
+  background-color: #8D99AE;
+  border: #2B2D42 2px solid;
+  border-radius: 10px;
+  text-align: start;
+  padding: 10px;
+}
+.ticketInfoText {
+  color: #2B2D42;
+  font-size: 20px;
+}
+.ticketInfoTicket {
+  color: #FFFFFF;
 }
 
 .reviews {

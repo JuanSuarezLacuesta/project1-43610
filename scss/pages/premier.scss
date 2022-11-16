@@ -166,8 +166,17 @@
     }
 }
 
-.try-box{
-    width: 100px;
-    height: 100px;
-    background-color: red;
+.ticketInfo{
+    background-color: map-get($palette-1, "border" );
+    border: map-get($palette-1, "background" ) 2px solid;
+    border-radius: 10px;
+    text-align: start;
+    padding: 10px;
+    &Text{
+        color: map-get($palette-1, "background" );
+        font-size: 20px;
+    }
+    &Ticket{
+        color: #FFFFFF;
+    }
 }
