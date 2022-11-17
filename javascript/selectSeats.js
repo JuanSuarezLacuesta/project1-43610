@@ -1,74 +1,86 @@
-/* FUNCIONES */
+// ------------------- FUNCTIONS ----------------- //
 
 function blockSeats(array) {
+
     array.forEach(element => {
+
         let seat = document.getElementById(element)
         seat.className = "bi bi-person-fill seats seats-taken"
+
     });
+
 }
 
 
-
-
-let seats = document.getElementById("seats");
-const thisSeat = seats;
-
-const ticketStorage = localStorage.getItem("ticket");
-const ticket = JSON.parse(ticketStorage);
-const user = ticket[ticket.length - 1];
+// ------------ GLOBAL VARIABLES --------------------//
 
 let num1 = 0;
 let takenSeats = [];
 
-console.log(user);
+// ---- ALL SEATS ---- //
+let seats = document.getElementById("seats");
+const thisSeat = seats;
 
-//boton
+// ---- TICKET INFORMATION ----//
+
+const ticketStorage = localStorage.getItem("ticket");
+const ticket = JSON.parse(ticketStorage);
+
+// ---- LAST USER IN THE LOCAL ---//
+const user = ticket[ticket.length - 1];
+
+
+// ---- BUTTON DISABLE ----//
 const lockSeats = document.getElementById("nextStep");
-//bptpn disable
 lockSeats.disabled = true;
 
 
 
+// ------------ SELECTION AND COLOR CHANGE OF SEATS ---------//
 
-//seleccion y cambio de color de asientos
 thisSeat.addEventListener("click", (e) => {
-    let seat = e.target; 
+
+    //SEAT SELECTED
+    let seat = e.target;
     let targetId = parseInt(e.target.id);
-    
+
     if (!Number.isNaN(targetId)) {
-         
+
         if (takenSeats.includes(targetId)) {
-            
+
+            //CHANGE TO NORMAL
             seat.className = "bi bi-person-fill seats"
             takenSeats = takenSeats.filter((element) => {
                 return element !== targetId;
             })
-        
+
         } else {
-           
-            if ( takenSeats.length < user.amountSeats) {
+
+            if (takenSeats.length < user.amountSeats) {
+
+                //CHANGE TO GREEN AND ADD
                 seat.className = "bi bi-person-fill seats seats-select"
                 takenSeats.push(targetId);
-                console.log(takenSeats.length);
+
+                //BUTTON AVIABLE TO PUSH
                 if (takenSeats.length === user.amountSeats) {
                     lockSeats.disabled = false;
                 }
             }
-            
+
         }
 
-    } 
+    }
 
 });
 
 
+// ----------- ADD RESERVED SEATS TO USER ------------//
 
+lockSeats.addEventListener("click", () => {
 
-lockSeats.addEventListener("click", (e) => {
-    
     user.seats = takenSeats;
-    console.log(user);
-    
+
     localStorage.setItem("taken", JSON.stringify(takenSeats));
     localStorage.setItem("reserved", JSON.stringify(user));
 
@@ -76,9 +88,9 @@ lockSeats.addEventListener("click", (e) => {
 
     lockSeats.innerHTML = "LOADING"
 
-    setTimeout(() =>{
+    setTimeout(() => {
         window.location.href = "purchase-confirmed.html"
-    },1000);
+    }, 1000);
 })
 
 

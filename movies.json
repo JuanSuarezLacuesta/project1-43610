@@ -5,14 +5,14 @@
         "movieLocation": "Los Angeles"
     },
     {
-        "movieName": "Black Panther: Wakanda Forever",
-        "movieDate": "5/11",
-        "movieLocation": "Los Angeles"
-    },
-    {
         "movieName": "Avatar: The Way Of Water",
         "movieDate": "10/12",
         "movieLocation": "Madrid"
+    },
+    {
+        "movieName": "The Banshees of Inisherin",
+        "movieDate": "29/10",
+        "movieLocation": "Los Angeles"
     },
     {
         "movieName": "Ticket to Paradise",
@@ -20,9 +20,9 @@
         "movieLocation": "Los Angeles"
     },
     {
-        "movieName": "The Banshees of Inisherin",
-        "movieDate": "29/10",
+        "movieName": "Black Panther: Wakanda Forever",
+        "movieDate": "5/11",
         "movieLocation": "Los Angeles"
     }
-]
 
+]
