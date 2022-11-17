@@ -1,3 +1,6 @@
+ATENCION, NO SE PORQUE PERO GITHUB PAGES HACE QUE NO FUNCIONE EL ULTIMO HTML CORRECTAMENTE RECOMIENDO DESCARGARLO Y USARLO LOCAL PARA QUE TODO SE VEA CORRECTAMENTE
+
+
 Buenas!!
 En este proyecto decidi hacer una reserva de lugares para premiers en el cine, todo esto esta en la pestania de "PREMIERS" no hay nada en el index!!
 La misma se puede acceder desde el menu hamburguesa de la derecha.
